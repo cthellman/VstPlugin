@@ -13,28 +13,36 @@
 VstPluginAudioProcessorEditor::VstPluginAudioProcessorEditor (VstPluginAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
-    // Make sure that before the constructor has finished, you've set the
-    // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    mGainSlider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
+    mGainSlider.setRange(0.00f, 1.00f, 0.01f);
+    mGainSlider.setValue(0.50f);
+    mGainSlider.addListener(this);
+    addAndMakeVisible(mGainSlider);
+
+    setSize (200, 300);
 }
 
 VstPluginAudioProcessorEditor::~VstPluginAudioProcessorEditor()
 {
+
 }
 
 //==============================================================================
 void VstPluginAudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
-
-    g.setColour (juce::Colours::white);
-    g.setFont (15.0f);
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
+    g.fillAll (juce::Colours::black);
 }
 
 void VstPluginAudioProcessorEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+    mGainSlider.setBounds(getWidth()/2-50, getHeight()/2-75, 100, 150);
+}
+
+void VstPluginAudioProcessorEditor::sliderValueChanged(juce::Slider* slider)
+{
+    
+    if (slider == &mGainSlider)
+        audioProcessor.mGain = mGainSlider.getValue();
+
 }

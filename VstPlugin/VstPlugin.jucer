@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="VF4y7N" name="VstPlugin" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
-  <MAINGROUP id="gEkLGe" name="VstPlugin">
-    <GROUP id="{E664BF4A-AECB-BE18-F85B-E73D190DA3AA}" name="Source">
-      <FILE id="ZEBmkt" name="PluginProcessor.cpp" compile="1" resource="0"
+<JUCERPROJECT id="JRzrjy" name="VstPlugin" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginManufacturer="Sveriges Radio">
+  <MAINGROUP id="pHUGSR" name="VstPlugin">
+    <GROUP id="{E8295AA7-A1D5-B334-B4DD-E7FBC4F38C0C}" name="Source">
+      <FILE id="YbtM9q" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
-      <FILE id="ZL71K5" name="PluginProcessor.h" compile="0" resource="0"
+      <FILE id="fjYfT6" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
-      <FILE id="XhbaX8" name="PluginEditor.cpp" compile="1" resource="0"
+      <FILE id="DIQalv" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
-      <FILE id="y5ehb0" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="ioYqWL" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
@@ -21,18 +22,18 @@
         <CONFIGURATION isDebug="0" name="Release" targetName="VstPlugin"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_audio_basics" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../../../../Mandozzi/juce-6.0.7-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
       </MODULEPATHS>
     </VS2019>
   </EXPORTFORMATS>
